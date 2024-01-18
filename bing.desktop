@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Terminal=false
+Name=Bing Wallpaper
+Exec=bash -c "~/.config/autostart/bing.sh"
+Comment=Sets the wallpaper to the Bing daily wallpaper
