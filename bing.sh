@@ -1,15 +1,12 @@
 #!/usr/bin/bash
 
-# Last modified by Liam Coogan, 2024-04-30
+# Last modified by Liam Coogan, 2024-05-01
 
 # This script will download today's Bing wallpaper to the specified directory,
 # and set it as the wallpaper on the GNOME desktop environment.
 
 # To run this script every time your user logs in,
 # place this and 'bing.desktop' in '~/.config/autostart'
-
-# User whose wallpaper will be set
-USER=$(whoami)
 
 # Directory wallpaper will be saved to
 DIR="/home/$USER/Pictures/Bing"
