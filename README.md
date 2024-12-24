@@ -2,4 +2,4 @@ A Bash script for Linux systems that will download the latest Bing daily image a
 
 To run this script on startup, place 'bing.sh' and 'bing.desktop' in the folder '~/.config/autostart'. If it doesn't exist, you can create it.
 
-This code has been tested and works on Ubuntu 24.04 with GNOME 46.
+This code has been tested and works on Ubuntu 24.04 with GNOME 46, and Fedora 41 with GNOME 47.
