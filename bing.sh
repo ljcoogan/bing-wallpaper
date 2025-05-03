@@ -15,7 +15,7 @@ DIR="/home/$USER/Pictures/Bing"
 sleep 10
 
 # Download the XML metadata for today's image
-XML=$(wget -q -O - "https://www.bing.com/HPImageArchive.aspx?format=xml&idx=0&n=1")
+XML=$(curl -s "https://www.bing.com/HPImageArchive.aspx?format=xml&idx=0&n=1")
 
 # Ensure XML has downloaded successfully before continuing
 if [[ -n "$XML" ]]
