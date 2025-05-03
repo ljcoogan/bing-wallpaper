@@ -40,8 +40,8 @@ fi
 
 # Save file to specified location
 mkdir -p "$DIR"
-wget -q -O "$FILE" "$URL"
-		
+curl -s -o "$FILE" "$URL"
+
 # If the image file has not downloaded, exit with failure
 if [[ ! -f "$FILE" ]]
 then
