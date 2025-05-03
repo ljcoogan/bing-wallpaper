@@ -14,12 +14,6 @@ DIR="/home/$USER/Pictures/Bing"
 # Allow time for computer to connect to the internet
 sleep 10
 
-# Wake up Bing wallpaper server
-ping -c 4 "https://www.bing.com/HPImageArchive.aspx?format=xml&idx=0&n=1" > /dev/null 2>&1
-
-# Allow time for wallpaper server to wake up
-sleep 40
-
 # Download the XML metadata for today's image
 XML=$(wget -q -O - "https://www.bing.com/HPImageArchive.aspx?format=xml&idx=0&n=1")
 
