@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-# Last modified by Liam Coogan, 2025-01-01
+# Last modified by Liam Coogan, 2025-05-03
 
 # This script will download today's Bing wallpaper to the specified directory,
 # and set it as the wallpaper on the GNOME desktop environment.
@@ -46,6 +46,7 @@ then
 		then
 			# Set GNOME desktop wallpaper for current user
 			gsettings set org.gnome.desktop.background picture-uri "file://${FILE}"
+   			gsettings set org.gnome.desktop.background picture-uri-dark "file://${FILE}"
 		else
 			# Notify user file failed to download
 			notify-send "Bing Wallpaper: Failed to download wallpaper."
